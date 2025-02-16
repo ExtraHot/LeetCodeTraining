@@ -1,7 +1,6 @@
-
 //https://leetcode.com/problems/palindrome-number/
 namespace LeetCodeTraining.Tasks;
- 
+
 static class Palindrome
 {
     public static bool IsPalindrome(int x)
@@ -9,7 +8,8 @@ static class Palindrome
         int original = x;
         int reversed = 0;
 
-        if (x < 0) return false;
+        if (x < 0)
+            return false;
         while (x != 0)
         {
             reversed = reversed * 10 + (x % 10);
